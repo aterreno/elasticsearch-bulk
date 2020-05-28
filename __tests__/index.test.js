@@ -34,7 +34,7 @@ const dataset = [
   },
 ];
 
-afterEach(async () => {
+beforeEach(async () => {
   await client.indices.delete({ index: 'tweets' });
 });
 
